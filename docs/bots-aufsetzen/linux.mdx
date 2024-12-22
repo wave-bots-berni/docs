@@ -1,0 +1,41 @@
+---
+sidebar_position: 2
+---
+
+# Linux
+
+###### Hier bekommt ihr eine Genaue Anleitung, wie ihr unsere Bots aufsetzen könnt
+
+:::caution Vorab-Information:
+
+`sudo apt update` eingeben
+
+:::
+
+***
+
+### Schritt für Schritt Anleitung
+1. Node.js installieren:
+    - Im 1. Schritt müsst ihr euch Node.js installieren. Das macht ihr wie folgt: `sudo apt install nodejs`, danach `sudo apt install npm`
+2. Bot Ordner herunterladen und entpacken
+    - Jetzt ladet ihr euch den Bot, welcher euch per DM geschickt wurde, herunter. Danach müsst ihr den Ordner entpacken
+    - Nach dem Entpacken könnt ihr den .zip ordner löschen. Nun geht ihr in den Entpackten ordner, um den Nächsten schritt auszuführen
+    - Herunterladen: `wget <link>`
+    - Entpacken: `unzip <filename.zip>`
+3. Bot erstellen
+    - Um euren eigentlichen Discord bot zu erstellen, müsst ihr auf das [Discord Developer Portal](https://discord.com/developers/applications) gehen.
+    - Ihr solltet einen blauen Button mit "New Application" finden. Dort müsst ihr den Namen eures Bots eingeben.
+    - Nachdem ihr euren Bot erstellt habt, müsst ihr auf der linken seite zu "Bot" navigieren.
+    - Wenn ihr nun ein bisschen nach unten geht, sollte eine kleine Überschrift "Privileged Gateway Intents" zu sehen sein. Darunter müsst ihr nun alle 3 switches umschalten, das sie blau leuchten.
+4. Config.json anpassen
+    - Jetzt müsst ihr die config.js öffnen. In der config müsst ihr **ALLE** Elemente ändern. **Wichtig: Auch die Links für Logo und Banner !**
+    - kleines Beispiel: bei `team: "teamRoleId"` schaut es wie folgt aus: `team: "123456789"`
+5. Nun müsst ihr alle notwendigen Packages installieren
+    - Dazu öffnet ihr den Ordner eures Bots in cmd.
+    - Wenn ihr den Ordner in CMD offen habt, müsst ihr folgenden befehl eingeben:
+    - **`npm i`**
+6. Bot Starten
+
+7. Optional: 
+    - Ich würde euch pm2 empfehlen, um den Bot permanent besser hosten zu können.
+    - Hier kommt ihr zu der Anleitung:

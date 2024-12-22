@@ -1,0 +1,33 @@
+---
+sidebar_position: 3
+---
+
+# Linux - PM2
+
+###### Hier bekommt ihr eine Genaue Anleitung, wie ihr euren Bot mit PM2 hostet
+
+:::caution Vorab-Information:
+
+`sudo apt update` eingeben
+
+:::
+
+***
+
+### Schritt für Schritt Anleitung
+1. PM2 installieren:
+    - `sudo npm install -g pm2`
+2. Bot Starten
+    - `pm2 start index.js --name "b-bot"`, wobei ihr bei b-bot einen beliebigen Namen eingeben könnt. Um es übersichtlich zu halten würde ich immer z.B. b-systembot oder b-ticketbot machen.
+3. Check ob der Bot läuft:
+    - `pm2 list`
+4. Bot automatisch bei Neustart starten
+    - `pm2 startup`
+    - `pm2 save`
+***
+5. Nützliche Befehle
+    - ** Status anzeigen:** `pm2 status`
+    - **Log-Dateien anzeigen:** `pm2 logs b-bot`
+    - **Bot stoppen:** `pm2 stop b-bot`
+    - **Bot neu starten:** `pm2 restart b-bot`
+    - **Bot löschen:** `pm2 delete b-bot`
