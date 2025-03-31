@@ -1,4 +1,4 @@
-# B Bots Docs
-Official B Bots Documentation
+# Wave Bots Docs
+Official Wave Bots Documentation
 
 [Docs](https://docs.berni.tech/)
